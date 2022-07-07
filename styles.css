@@ -2,7 +2,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(62, 62, 62);
+    background-image: url(Background.jpg);
+    /* source: https://unsplash.com/photos/Xyv-Wez4eWk */
     color: white;
 }
 
@@ -20,13 +21,13 @@ input{
 }
 
 .container{
-    padding-left: 50px;
-    padding-top: 20px;
-    margin-left: 50px;
-    margin-right: 0em;
+    padding:30px 20px 30px 20px;
+    margin: 20px 0px 50px 20px;
+    /* display: inline-block; */
     background-color:rgb(92, 91, 91) ;
     border-radius: 10px;
-    max-width:500px
+    max-width:400px;
+    float: left;
 }
 .block{
     display: block;
@@ -35,10 +36,11 @@ input{
 
 .center{
     text-align: center;
+
 }
 
 .flex{
     display: flex;
     flex-direction: row;
+    justify-content:center;
 }
-

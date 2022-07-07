@@ -1,109 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
-    </head>
-    <header class="flex">
-        <img src="assembly.svg" alt="flower logo">
-        <!-- source: logodust.com -->
-        <h1>Wildrose Finance</h1>
-    </header>
-    <h1 class="center">Applications</h1>
-    <div class="flex"></div>
-    <form class="container" id="form" onsubmit="return false;">
-        <h2 class="center" >Application Form</h2>
-        <label class = "block" for="date">Date: </label>
-        <input class="block" type="date" id="date" name="date"  required>
-        <label class="block" for="fname">First Name:</label>
-        <input class="block" type="text" id="fname" name="fname"
-            pattern="[A-Za-z -]{0,25}"
-            title="only alphabetic, spaces and hyphens in the name"
-            required>
+    <body>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="styles.css">
+            <script src="scripts.js"></script>
+        </head>
+        <header class="flex">
+            <img src="assembly.svg" alt="flower logo">
+            <!-- source: logodust.com -->
+            <h1>Wildrose Finance</h1>
+        </header>
+        <div class="flex">
+            <form class="container" id="form" onsubmit="return false;">
+                <h2 class="center">Application Form</h2>
+                <label class="block" for="date">Date: </label>
+                <input class="block" type="date" id="date" name="date" required>
+                <label class="block" for="fname">First Name:</label>
+                <input class="block" type="text" id="fname" name="fname"
+                    pattern="[A-Za-z -]{0,25}"
+                    title="only alphabetic, spaces and hyphens in the name"
+                    required>
 
-        <label class="block" for="lname">Last Name:</label>
-        <input class="block" type="text" id="lname" name="lname"
-            pattern="[A-Za-z-]{0,25}"
-            title="only alphabetic, spaces and hyphens in the name"
-            required>
+                <label class="block" for="lname">Last Name:</label>
+                <input class="block" type="text" id="lname" name="lname"
+                    pattern="[A-Za-z-]{0,25}"
+                    title="only alphabetic, spaces and hyphens in the name"
+                    required>
 
-        <label class="block" for="address">Address:</label>
-        <input class="block" type="text" id="address" name="address"
-            title="only alphabetic, spaces, numbers and hyphens in the
-            address"
-            required>
+                <label class="block" for="address">Address:</label>
+                <input class="block" type="text" id="address" name="address"
+                    title="only alphabetic, spaces, numbers and hyphens in the
+                    address"
+                    required>
 
-        <label class="block" for="postal">Postal Code:</label>
-        <input class="block" type="text" id="postal" name="postal"
-            pattern="[A-Za-z0-9]{0,6}"
-            title="only letters and numbers in the postal
-            code"
-            required>
+                <label class="block" for="postal">Postal Code:</label>
+                <input class="block" type="text" id="postal" name="postal"
+                    pattern="[A-Za-z0-9]{0,6}"
+                    title="only letters and numbers in the postal
+                    code"
+                    required>
 
-        <label class="block" for="tel">Phone Number:</label>
-        <input type="radio" id="business" name="telType" value="business">
-        <label for="business">Business</label>
-        <input type="radio" id="home" name="telType" value="home">
-        <label for="business">Home</label>
-        <input class="block" type="tel" id="tel" name="tel"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            placeholder="0000000000"
-            title="0000000000" required>
+                <label class="block" for="tel">Phone Number:</label>
+                <input type="radio" id="business" name="telType"
+                    value="business">
+                <label for="business">Business</label>
+                <input type="radio" id="home" name="telType" value="home">
+                <label for="business">Home</label>
+                <input class="block" type="tel" id="tel" name="tel"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    placeholder="0000000000"
+                    title="0000000000" required>
 
-        <label class="block" for="email">Email:</label>
-        <input type="email" id="email" name="email" class="block"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-            required>
+                <label class="block" for="email">Email:</label>
+                <input type="email" id="email" name="email" class="block"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    required>
 
-        <label class="block" for="currentClient">Is the customer a current client?</label>
-        <input type="radio" id="yes" name="currentClient" value="yes">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="currentClient" value="no">
-        <label for="no">No</label>
+                <label class="block" for="currentClient">Is the customer a
+                    current client?</label>
+                <input type="radio" id="yes" name="currentClient" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="currentClient" value="no">
+                <label for="no">No</label>
 
-        <label class="block" for="gender">Gender</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" id="Male" name="gender" value="Male">
-        <label for="female">Male</label>
-        <input type="radio" id="Other" name="gender" value="Other">
-        <label for="female">Other</label>
+                <label class="block" for="gender">Gender</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="Male" name="gender" value="Male">
+                <label for="female">Male</label>
+                <input type="radio" id="Other" name="gender" value="Other">
+                <label for="female">Other</label>
 
-        <label class="block" for="age">Age:</label>
-        <input type="number" id="number" name="number" min="18">
+                <label class="block" for="age">Age:</label>
+                <input type="number" id="number" name="number" min="18">
 
-        <label class="block" for="ownership">Do you own or rent a home?</label>
-        <input type="radio" id="no" name="ownership" value="no">
-        <label for="no">Rent</label>
-        <input type="radio" id="yes" name="ownership" value="yes">
-        <label for="yes">Own</label>
+                <label class="block" for="ownership">Do you own or rent a home?</label>
+                <input type="radio" id="no" name="ownership" value="no">
+                <label for="no">Rent</label>
+                <input type="radio" id="yes" name="ownership" value="yes">
+                <label for="yes">Own</label>
 
-        <label class="block" for="income">What is your gross annual income?</label>
-        <input type="number" id="income" name="income" min="0">
+                <label class="block" for="income">What is your gross annual
+                    income?</label>
+                <input type="number" id="income" name="income" min="0">
 
-        <label class="block" for="expenses">Please Check the box if you own any of the following.</label>
-        <input type="checkbox" id="vehicle" name="vehicle" value="vehicle">
-        <label for="car">Car</label>
-        <input type="checkbox" id="RRSP" name="RRSP" value="RRSP">
-        <label for="RRSP">RRSP</label>
-        <input type="checkbox" id="TFSA" name="TFSA" value="TFSA">
-        <label for="TFSA">TFSA</label>
-        <input type="checkbox" id="RRIF" name="RRIF" value="RRIF">
-        <label for="RRIF">RRIF</label>
+                <label class="block" for="expenses">Please Check the box if you
+                    own any of the following.</label>
+                <input type="checkbox" id="vehicle" name="vehicle"
+                    value="vehicle">
+                <label for="car">Car</label>
+                <input type="checkbox" id="RRSP" name="RRSP" value="RRSP">
+                <label for="RRSP">RRSP</label>
+                <input type="checkbox" id="TFSA" name="TFSA" value="TFSA">
+                <label for="TFSA">TFSA</label>
+                <input type="checkbox" id="RRIF" name="RRIF" value="RRIF">
+                <label for="RRIF">RRIF</label>
 
-        <input type="submit" value="Submit">
-    </form>
-    <div class="container" id="arraydiv">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
-</div>
-</body>
+                <input class="block" type="submit" value="Submit">
+            </form>
+            <div class="container" id="arraydiv">
+                <h2 class="center">Clients</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
