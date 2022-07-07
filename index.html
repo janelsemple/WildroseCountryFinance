@@ -64,8 +64,32 @@
         <input type="radio" id="Other" name="gender" value="Other">
         <label for="female">Other</label>
 
-        
+        <label class="block" for="age">Age:</label>
+        <input type="number" id="number" name="number" min="18">
 
+        <label class="block" for="ownership">Do you own or rent a home?</label>
+        <input type="radio" id="no" name="ownership" value="no">
+        <label for="no">Rent</label>
+        <input type="radio" id="yes" name="ownership" value="yes">
+        <label for="yes">Own</label>
+
+        <label class="block" for="income">What is your gross annual income?</label>
+        <input type="number" id="income" name="income" min="0">
+
+        <label class="block" for="expenses">Please Check the box if you own any of the following.</label>
+        <input type="checkbox" id="vehicle" name="vehicle" value="vehicle">
+        <label for="car">Car</label>
+        <input type="checkbox" id="RRSP" name="RRSP" value="RRSP">
+        <label for="RRSP">RRSP</label>
+        <input type="checkbox" id="TFSA" name="TFSA" value="TFSA">
+        <label for="TFSA">TFSA</label>
+        <input type="checkbox" id="RRIF" name="RRIF" value="RRIF">
+        <label for="RRIF">RRIF</label>
+
+        <input type="submit" value="Submit" onsubmit="">
     </form>
+    <div id="arraydiv">
+        
+    </div>
 </body>
 </html>
