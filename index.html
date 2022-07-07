@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
 <body>
-    <form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <header class="flex">
+        <img src="assembly.svg" alt="flower logo">
+        <!-- source: logodust.com -->
+        <h1>Wildrose Finance</h1>
+    </header>
+    <h1 class="center">Applications</h1>
+    <div class="flex"></div>
+    <form class="container" id="form" onsubmit="return false;">
+        <h2 class="center" >Application Form</h2>
         <label class = "block" for="date">Date: </label>
         <input class="block" type="date" id="date" name="date"  required>
         <label class="block" for="fname">First Name:</label>
@@ -86,10 +97,13 @@
         <input type="checkbox" id="RRIF" name="RRIF" value="RRIF">
         <label for="RRIF">RRIF</label>
 
-        <input type="submit" value="Submit" onsubmit="">
+        <input type="submit" value="Submit">
     </form>
-    <div id="arraydiv">
-        
+    <div class="container" id="arraydiv">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
     </div>
+</div>
 </body>
 </html>
