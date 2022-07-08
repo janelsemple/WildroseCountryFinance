@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <body>
+    <body  onload="display()">
         <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
             <h1>Wildrose Finance</h1>
         </header>
         <div class="flex">
-            <form class="container" id="form" onsubmit="return false;">
+            <form class="container" id="form" onsubmit="add(); display(); return false;">
                 <h2 class="center">Application Form</h2>
                 <label class="block" for="date">Date: </label>
                 <input class="block" type="date" id="date" name="date" required>
@@ -64,9 +64,9 @@
 
                 <label class="block" for="currentClient">Is the customer a
                     current client?</label>
-                <input type="radio" id="yes" name="currentClient" value="yes">
+                <input type="radio" id="yes" name="currentClient" value="CurrentClient">
                 <label for="yes">Yes</label>
-                <input type="radio" id="no" name="currentClient" value="no">
+                <input type="radio" id="no" name="currentClient" value="NewClient">
                 <label for="no">No</label>
 
                 <label class="block" for="gender">Gender</label>
@@ -78,12 +78,12 @@
                 <label for="female">Other</label>
 
                 <label class="block" for="age">Age:</label>
-                <input type="number" id="number" name="number" min="18">
+                <input type="number" id="age" name="age" min="18">
 
                 <label class="block" for="ownership">Do you own or rent a home?</label>
-                <input type="radio" id="no" name="ownership" value="no">
+                <input type="radio" id="no" name="ownership" value="Renter">
                 <label for="no">Rent</label>
-                <input type="radio" id="yes" name="ownership" value="yes">
+                <input type="radio" id="yes" name="ownership" value="Homeowner">
                 <label for="yes">Own</label>
 
                 <label class="block" for="income">What is your gross annual
@@ -104,18 +104,8 @@
 
                 <input class="block" type="submit" value="Submit">
             </form>
-            <div class="container" id="arraydiv">
-                <h2 class="center">Clients</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
+            <div class="container"  id="arraydiv">
+                
             </div>
         </div>
     </body>
