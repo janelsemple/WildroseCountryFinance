@@ -49,16 +49,21 @@ function display() {
     var string = "";
     var box = "";
     div.innerHTML = "<h2 class='center'>Clients</h2>";
+    //checking to see if the client array is empty, if it is it displays the status
+    if(customers.length === 0){
+        div.innerHTML += "<p class='center'>No clients to display.</p>";
+    }else{//go through the array of customers and display each one, also add a checkbox element for selectingm, and table element so that they are displayed neatly.
     for (var i = 0; i < customers.length; i++) {
         string = "<td><label for=" + customers[i].fullName + ">"  + customers[i].fullName + ", " + customers[i].address + ", " + customers[i].postal + ", " + customers[i].phone + ", " + customers[i].email + "</label></td></table><br>";
         box = "<table><tr><td><input type='checkbox' value='" + customers[i].fullName + "' name='item' ></td>";
         customerString = box + string;
         div.innerHTML += customerString;
     }
-
+    //a button to remove the selected customers
     div.innerHTML += "<button type='button' onclick='remove()'>Remove Selected Clients</button>";
-}
+    }
 
+}
 
 function remove() {
     //get an array of all the checked elements

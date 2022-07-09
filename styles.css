@@ -5,16 +5,20 @@ body{
     background-image: url(Background.jpg);
     /* source: https://unsplash.com/photos/Xyv-Wez4eWk */
     color: white;
+    padding: 0%;
 }
 
 img{
     max-width: 100px
 }
 
-header, table{
+header, table, p{
     background-color: rgb(109, 73, 73);
 }
 
+header{
+    margin: 0;
+}
 input{
     color: black;
     margin-bottom: 20px;
@@ -27,6 +31,7 @@ input{
     background-color:rgb(92, 91, 91) ;
     border-radius: 10px;
     max-width:400px;
+    min-width: 400px;
     float: left;
 }
 .block{
