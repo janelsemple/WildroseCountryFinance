@@ -48,6 +48,7 @@ function display() {
     var div = document.getElementById("arraydiv");
     var string = "";
     var box = "";
+    var customerString = "";
     div.innerHTML = "<h2 class='center'>Clients</h2>";
     //checking to see if the client array is empty, if it is it displays the status
     if(customers.length === 0){
