@@ -52,10 +52,11 @@ function display() {
     //checking to see if the client array is empty, if it is it displays the status
     if(customers.length === 0){
         div.innerHTML += "<p class='center'>No clients to display.</p>";
-    }else{//go through the array of customers and display each one, also add a checkbox element for selectingm, and table element so that they are displayed neatly.
+    }else{
+    //go through the array of customers and display each one, also add a checkbox element for selecting, and table element so that they are displayed neatly.
     for (var i = 0; i < customers.length; i++) {
-        string = "<td><label for=" + customers[i].fullName + ">"  + customers[i].fullName + ", " + customers[i].address + ", " + customers[i].postal + ", " + customers[i].phone + ", " + customers[i].email + "</label></td></table><br>";
         box = "<table><tr><td><input type='checkbox' value='" + customers[i].fullName + "' name='item' ></td>";
+        string = "<td><label for=" + customers[i].fullName + ">"  + customers[i].fullName + ", " + customers[i].address + ", " + customers[i].postal + ", " + customers[i].phone + ", " + customers[i].email + "</label></td></table><br>";
         customerString = box + string;
         div.innerHTML += customerString;
     }
@@ -65,11 +66,12 @@ function display() {
 
 }
 
+
+//This function removes multiple customers at once, if they are selected.
 function remove() {
     //get an array of all the checked elements
     var elements = document.querySelectorAll('input[name="item"]:checked');
     var i = 0;
-
     // go through the array and match the checked elements with the array of customer objects throught their firstname
     for (i = 0; i < elements.length; i++) {
         if (elements[i].checked) {
